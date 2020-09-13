@@ -13,17 +13,17 @@ import { Check } from 'react-feather'
 export default () => {
   return (
     <Layout>
-      <section className="shadow mb-16 xl:mb-0">
+      <section className="border-b-2 mb-16 xl:mb-0">
         <div className="flex flex-wrap items-center relative p-8 xl:py-32 xl:px-12 overflow-hidden">
           <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
-            <h1 className="text-5xl xl:text-6xl">
+            <h1 className="text-4xl xl:text-6xl">
               Send newsletters{' '}
               <span className="pt-3 p-1 bg-gradient-to-r from-red-200 to-red-500">
                 directly
               </span>{' '}
               to your Kindle
             </h1>
-            <div className="flex xl:block items-center justify-center mt-8 text-xl xl:text-base">
+            <div className="flex xl:block items-center justify-center mt-8 text-lg xl:text-base">
               <a href="https://app.newslettertokindle.com">
                 <button className="btn">Get Started</button>
               </a>
@@ -35,7 +35,7 @@ export default () => {
         </div>
       </section>
 
-      <section className="container py-16 xl:py-32 flex flex-wrap items-center justify-center text-lg xl:text-xl">
+      <section className="container py-16 xl:py-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
         <div className="w-full xl:w-1/2 flex justify-center xl:justify-end">
           <div className="relative mb-12 xl:mb-0 xl:mr-32">
             <img src={MeditatingDoodle} />
@@ -61,7 +61,7 @@ export default () => {
         </div>
       </section>
 
-      <section className="container py-16 xl:py-32 flex flex-wrap items-center justify-center text-lg xl:text-xl">
+      <section className="container py-16 xl:py-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
         <div className="w-full xl:w-1/2 flex justify-center xl:justify-end">
           <div className="relative mb-12 xl:mb-0 xl:mr-32">
             <img src={SelfieDoodle} />
@@ -87,7 +87,7 @@ export default () => {
         </div>
       </section>
 
-      <section className="container py-16 xl:py-32 flex flex-wrap items-center justify-center text-lg xl:text-xl">
+      <section className="container py-16 xl:py-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
         <div className="w-full xl:w-1/2 flex justify-center xl:justify-end">
           <div className="relative flex justify-center items-center mb-12 xl:mb-0 xl:mr-32">
             <img src={LayingDoodle} className="xl:-mb-48" />
@@ -113,10 +113,10 @@ export default () => {
         </div>
       </section>
 
-      <section className="bg-black py-16">
+      <section className="bg-black py-32">
         <div className="container xl:w-1/2">
           <Animated>
-            <h2 className="text-6xl mb-4 text-white text-center">
+            <h2 className="text-5xl xl:text-6xl mb-4 text-white text-center">
               Ready to get started?
             </h2>
           </Animated>
