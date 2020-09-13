@@ -1,25 +1,19 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import abductionIllustration from "../images/abduction-illustration.svg";
+import Layout from '../components/layout'
 
 function NotFoundPage() {
   return (
-    <Layout>
-      <SEO title="404: Not found" />
-      <div>
-        <img
-          alt="Ghost getting abducted by aliens"
-          className="block mx-auto w-1/2"
-          src={abductionIllustration}
-        />
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Looks like this page is a ghost that got abducted by aliens...
-        </h2>
-      </div>
+    <Layout title="404: Not found">
+      <section className="container py-32 text-center">
+        <h1 className="uppercase text-3xl xl:text-6xl mb-4">Page Not Found</h1>
+        <Link to="/" className="link text-2xl">
+          Go home
+        </Link>
+      </section>
     </Layout>
-  );
+  )
 }
 
-export default NotFoundPage;
+export default NotFoundPage

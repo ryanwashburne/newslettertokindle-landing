@@ -1,5 +1,72 @@
 /*! purgecss start ignore */
 @tailwind base;
+
+html,
+body {
+  @apply font-sans;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
 @tailwind components;
+
+.link {
+  @apply underline;
+}
+.link:hover {
+  @apply text-gray-700;
+}
+
+.btn {
+  @apply border-2;
+  @apply border-black;
+  @apply bg-white;
+  @apply transition;
+  @apply duration-300;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply px-3;
+  @apply py-2;
+}
+.btn:hover {
+  @apply bg-gray-200;
+}
+
+.counter {
+  @apply bg-black;
+  @apply rounded-full;
+  @apply h-20;
+  @apply w-20;
+  @apply text-center;
+  @apply font-bold;
+  @apply text-6xl;
+  @apply text-white;
+  @apply shadow;
+}
+
+.card {
+  @apply flex;
+  @apply flex-col;
+  @apply rounded-lg;
+  @apply bg-white;
+  @apply shadow;
+  @apply p-6;
+}
+
+.container {
+  @apply px-8;
+  @apply mx-auto;
+  max-width: 1200;
+}
+
 /*! purgecss end ignore */
 @tailwind utilities;
