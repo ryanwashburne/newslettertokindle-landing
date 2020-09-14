@@ -1,7 +1,11 @@
+const path = require('path')
+
 const resolveConfig = require('tailwindcss/resolveConfig')
 const tailwindConfig = require('./tailwind.config.js')
 
 const fullConfig = resolveConfig(tailwindConfig)
+
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -12,6 +16,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,6 +44,15 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

@@ -8,7 +8,18 @@ import SEO from './seo'
 export default ({ title, children }) => {
   return (
     <div className="min-h-screen">
-      <SEO title={title} />
+      <SEO
+        title={title}
+        keywords={[
+          `newsletter`,
+          `kindle`,
+          `email`,
+          `platform`,
+          `newsletters`,
+          `send`,
+          `manage`,
+        ]}
+      />
       <header className="container flex items-center py-6">
         <Link to="/" className="italic hover:text-gray-700 flex items-center">
           <Send />
