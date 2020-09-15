@@ -21,13 +21,19 @@ export default ({ title, children }) => {
         ]}
       />
       <header className="container flex items-center py-6">
-        <Link to="/" className="italic hover:text-gray-700 flex items-center">
+        <Link to="/" className="hover:text-gray-700 flex items-center">
           <Send />
           &nbsp;Newsletter to Kindle
         </Link>
         <div className="flex-grow" />
-        <a href="https://app.newslettertokindle.com">
-          <button className="btn">Login</button>
+        <Link to="#faq" className="hover:underline mr-8">
+          FAQ
+        </Link>
+        <Link to="#pricing" className="hover:underline mr-8">
+          Pricing
+        </Link>
+        <a href="https://app.newslettertokindle.com" className="btn">
+          Login
         </a>
       </header>
       <main>{children}</main>

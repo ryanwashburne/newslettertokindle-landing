@@ -61,6 +61,8 @@ h6 {
   @apply bg-white;
   @apply shadow;
   @apply p-6;
+  @apply border;
+  @apply border-gray-200;
 }
 
 .container {
