@@ -80,7 +80,7 @@ export default () => {
               </a>
             </div>
           </div>
-          <div className="xl:absolute right-0 top-0 w-full xl:w-2/5 xl:py-24 xl:mr-8">
+          <div className="w-full xl:w-2/5">
             <Image fluid={img1} />
           </div>
         </div>
