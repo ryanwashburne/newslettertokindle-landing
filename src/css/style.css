@@ -37,9 +37,12 @@ h6 {
   @apply justify-center;
   @apply px-3;
   @apply py-2;
+  @apply transform;
 }
 .btn:hover {
   @apply bg-gray-200;
+  @apply scale-105;
+  @apply shadow-xl;
 }
 
 .counter {

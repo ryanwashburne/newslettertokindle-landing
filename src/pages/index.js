@@ -9,7 +9,7 @@ import { Check } from 'react-feather'
 
 const Section = ({ number, src, title, children }) => {
   return (
-    <section className="container py-16 xl:py-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
+    <section className="container py-16 xl:pb-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
       <div className="w-full xl:w-1/2 flex justify-center xl:justify-end">
         <div className="w-full relative mb-12 xl:mb-0 xl:mr-32">
           <Image fluid={src} />
@@ -67,7 +67,7 @@ export default () => {
   const img4 = laying?.childImageSharp?.fluid
   return (
     <Layout>
-      <section className="border-b mb-16 xl:mb-0 relative py-16 xl:py-48">
+      <section className="mb-16 py-16 xl:py-48">
         <div className="container flex flex-wrap items-center">
           <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
             <h1 className="text-4xl xl:text-6xl font-thin">
@@ -119,7 +119,7 @@ export default () => {
         </p>
       </Section>
 
-      <section className="border-t py-16 xl:py-32" id="faq">
+      <section className="border-t bg-gray-100 py-16 xl:py-32" id="faq">
         <div className="container xl:w-1/2">
           <h3 className="text-center text-3xl mb-8">FAQ</h3>
           <div className="grid xl:grid-cols-2 gap-8 text-lg">
