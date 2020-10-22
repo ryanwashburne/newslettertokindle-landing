@@ -88,8 +88,8 @@ export default () => {
 
       <Section number={1} title="Create an account" src={img2}>
         <p>
-          Set up your account and start out with a month trial to see how you
-          like the service. No credit card required.
+          Set up your account, sync your Kindle, and get started! No credit card
+          required.
         </p>
       </Section>
 
@@ -99,17 +99,11 @@ export default () => {
           you will be provided a unique email address. You can use this email to
           subscribe to newsletters that you want delivered right to your device.
         </p>
-        {/* <p className="mt-6 text-sm italic">
-          Lacking inspiration?{' '}
-          <a
-            href="https://washburne.dev/favorites/newsletters"
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
-            Some of our favorite newsletters
-          </a>
-        </p> */}
+        <br />
+        <p>
+          Or you can integrate directly with Gmail and keep the emails both in
+          your inbox and on the Kindle
+        </p>
       </Section>
 
       <Section number={3} title="Enjoy on your Kindle" src={img4}>
@@ -177,14 +171,10 @@ export default () => {
           <div className="bg-white p-6 border-2 grid xl:grid-cols-2">
             <div className="p-6">
               <h4 className="text-2xl mb-2">Free</h4>
-              <ul className="text-sm">
+              <ul className="text-sma">
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">One-month trial for free</p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Keep newsletters after your trial ends</p>
+                  <p className="ml-2">10 newsletters every month</p>
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
@@ -192,24 +182,28 @@ export default () => {
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">Forwarding from Gmail</p>
+                  <p className="ml-2">Integration with Gmail</p>
+                </li>
+                <li className="flex items-center mb-2">
+                  <Check />
+                  <p className="ml-2">Dedicated forwarding address</p>
                 </li>
               </ul>
             </div>
             <div className="p-6 border-t-2 xl:border-t-0 xl:border-l-2">
-              <h4 className="text-5xl mb-2">$3/month</h4>
+              <h4 className="text-5xl mb-2">$5/month</h4>
               <ul className="text-lg">
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">aa</p>
+                  <p className="ml-2">Unlimited newsletters</p>
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">bb</p>
+                  <p className="ml-2">Conversion to Kindle format</p>
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">Dedicated email address</p>
+                  <p className="ml-2">Web client for viewing</p>
                 </li>
               </ul>
             </div>

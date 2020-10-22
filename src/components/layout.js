@@ -20,7 +20,7 @@ export default ({ title, children }) => {
           `manage`,
         ]}
       />
-      <header className="container flex items-center py-6">
+      <header className="text-sm md:text-lg container flex items-center py-6">
         <Link to="/" className="hover:text-gray-700 flex items-center">
           <Send />
           &nbsp;Newsletter to Kindle
