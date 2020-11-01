@@ -132,9 +132,9 @@ export default () => {
                 Can&apos;t I just forward the newsletters to my Kindle manually?
               </p>
               <p>
-                Unfortunetly, HTML/text based emails are not supported by Kindle
-                devices. Our service automates the conversion process so you
-                don&apos;t have to.
+                Unfortunately, HTML/text based emails are not supported by
+                Kindle devices. Our service automates the conversion process so
+                you don&apos;t have to.
               </p>
             </div>
             <div className="card">
@@ -191,7 +191,7 @@ export default () => {
               </ul>
             </div>
             <div className="p-6 border-t-2 xl:border-t-0 xl:border-l-2">
-              <h4 className="text-5xl mb-2">$5/month</h4>
+              <h4 className="text-5xl mb-2">$9/month</h4>
               <ul className="text-lg">
                 <li className="flex items-center mb-2">
                   <Check />
