@@ -5,12 +5,11 @@ import { Helmet } from 'react-helmet'
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(graphql`
-    query DefaultSEOQuery {
+    query {
       site {
         siteMetadata {
           title
           description
-          author
         }
       }
     }

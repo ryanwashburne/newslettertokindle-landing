@@ -174,7 +174,7 @@ export default () => {
               <ul className="text-sma">
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">10 newsletters every month</p>
+                  <p className="ml-2">10 forwarded emails every month</p>
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
@@ -203,7 +203,7 @@ export default () => {
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">Web client for viewing</p>
+                  <p className="ml-2">More features coming soon</p>
                 </li>
               </ul>
             </div>
