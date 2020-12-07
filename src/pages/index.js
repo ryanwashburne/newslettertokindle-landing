@@ -102,7 +102,7 @@ export default () => {
         <br />
         <p>
           Or you can integrate directly with Gmail and keep the emails both in
-          your inbox and on the Kindle
+          your inbox and on the Kindle.
         </p>
       </Section>
 
@@ -122,7 +122,7 @@ export default () => {
                 Why should I read newsletters on my Kindle?
               </p>
               <p>
-                Kindle&apos;s are made for reading. They are lightweight and
+                Kindles are made for reading. They are lightweight and
                 don&apos;t have any of the distractions that traditional web
                 browsers provide. Plus, you already have a Kindle. Use it more!
               </p>
@@ -132,7 +132,7 @@ export default () => {
                 Can&apos;t I just forward the newsletters to my Kindle manually?
               </p>
               <p>
-                Unfortunately, HTML/text based emails are not supported by
+                Unfortunately, HTML/text-based emails are not supported by
                 Kindle devices. Our service automates the conversion process so
                 you don&apos;t have to.
               </p>
@@ -143,18 +143,17 @@ export default () => {
               </p>
               <p>
                 Viewing links on a Kindle are not ideal. Kindle has a simplistic
-                web browser built-in but it is slow and difficult to navigate.
-                Newsletters sent to our platform are parsed and then save all
-                the links so they can be viewed from our web client later.
+                built-in web browser, but it is slow and difficult to navigate.
+                Newsletters sent to our platform are scanned and then save all
+                the links so they can be viewed from our website later.
               </p>
             </div>
             <div className="card">
               <p className="font-bold mb-2">How are images displayed?</p>
               <p>
-                Newsletters can be viewed as a direct copy or attempt to convert
-                to a native Kindle-format. There may be issues when converting
-                to Kindle format, but the direct copy should show images with no
-                problems.
+                Newsletters can be viewed as a direct copy or converted to a
+                native Kindle format. We recommend that you don&apos;t try to
+                convert newsletters that are image-heavy.
               </p>
             </div>
           </div>
@@ -171,7 +170,7 @@ export default () => {
           <div className="bg-white p-6 border-2 grid xl:grid-cols-2">
             <div className="p-6">
               <h4 className="text-2xl mb-2">Free</h4>
-              <ul className="text-sma">
+              <ul className="text-sm">
                 <li className="flex items-center mb-2">
                   <Check />
                   <p className="ml-2">10 forwarded emails every month</p>
