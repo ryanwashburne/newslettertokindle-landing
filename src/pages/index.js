@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 
 import Layout from '../components/layout'
@@ -70,12 +70,15 @@ export default () => {
       <section className="mb-16 py-16 xl:py-48">
         <div className="container flex flex-wrap items-center">
           <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
-            <h1 className="text-4xl xl:text-6xl font-thin">
+            <h1 className="text-4xl xl:text-7xl font-thin">
               Send newsletters{' '}
               <span className="italic font-bold">directly</span> to your Kindle
             </h1>
-            <div className="flex justify-center xl:justify-start my-4 xl:my-0">
-              <a href="https://app.newslettertokindle.com" className="btn">
+            <div className="flex justify-center xl:justify-start mt-8 mb-4">
+              <a
+                href="https://app.newslettertokindle.com"
+                className="btn text-xl"
+              >
                 Get Started
               </a>
             </div>
@@ -157,6 +160,11 @@ export default () => {
               </p>
             </div>
           </div>
+          <div className="flex items-center justify-center mt-8">
+            <Link to="/docs/google" className="link text-opacity-50 text-black">
+              Information about Google integration
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -208,7 +216,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <p className="text-sm text-gray-600 text-center mt-8">
+        <p className="text-sm text-white text-opacity-50 text-center mt-8">
           Questions? Contact{' '}
           <span className="font-bold">help@newslettertokindle.com</span>
         </p>

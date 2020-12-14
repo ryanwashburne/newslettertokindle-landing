@@ -31,7 +31,7 @@ module.exports = {
         short_name: `n2k`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.primary.default,
+        theme_color: fullConfig.theme.colors.black,
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`,
       },
@@ -53,18 +53,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
-          require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
-        ],
-      },
-    },
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
   ],
 }

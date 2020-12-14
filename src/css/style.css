@@ -46,6 +46,10 @@ h6 {
 }
 
 .counter {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply pt-2;
   @apply bg-black;
   @apply rounded-full;
   @apply h-20;
