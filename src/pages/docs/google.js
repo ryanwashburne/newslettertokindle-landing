@@ -9,8 +9,22 @@ export default () => {
   return (
     <Layout title="Google">
       <section className="container pb-16">
-        <h1 className="text-4xl my-8">Google Integration</h1>
-        <div className="">
+        <div className="my-8">
+          <h1 className="text-4xl">Google Integration</h1>
+          <p className="text-opacity-50 text-black mt-2">
+            Newsletter to Kindle&apos;s use of information received from Google
+            Restricted scopes APIs will adhere to Google&apos;s{' '}
+            <a
+              href="https://support.google.com/cloud/answer/9110914#explain-types"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Limited Use requirements
+            </a>
+            .
+          </p>
+        </div>
+        <div>
           <div className="card">
             <p className="font-bold mb-2">
               What do we do with your Google data?
