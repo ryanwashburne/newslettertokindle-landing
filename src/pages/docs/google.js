@@ -8,9 +8,11 @@ import Layout from '../../components/layout'
 export default () => {
   return (
     <Layout title="Google">
-      <section className="container pb-16">
+      <section className="container max-w-2xl pb-16">
         <div className="my-8">
-          <h1 className="text-4xl">Google Integration</h1>
+          <h1 className="text-4xl" id="google-integration">
+            Google Integration
+          </h1>
           <p className="text-opacity-50 text-black mt-2">
             Newsletter to Kindle&apos;s use of information received from Google
             Restricted scopes APIs will adhere to Google&apos;s{' '}
@@ -18,6 +20,7 @@ export default () => {
               href="https://support.google.com/cloud/answer/9110914#explain-types"
               target="_blank"
               rel="noreferrer"
+              className="link"
             >
               Limited Use requirements
             </a>
@@ -90,14 +93,34 @@ export default () => {
                 Terms of Service
               </Link>
             </p>
+            <p className="italic text-opacity-50 text-black mt-4">
+              If you believe there is a issue with our integration for your
+              account, please reach out to us as soon as possible.
+              <br />
+              <span className="font-bold">help@newslettertokindle.com</span>
+            </p>
           </div>
         </div>
-        <p className="italic text-opacity-50 text-black mt-8">
-          If you believe there is a issue with our integration for your account,
-          please reach out to us as soon as possible.
-          <br />
-          <span className="font-bold">help@newslettertokindle.com</span>
-        </p>
+      </section>
+      <section className="container max-w-2xl pb-16">
+        <div className="my-8">
+          <h2 className="text-2xl" id="limited-use">
+            Limited Use Disclosure
+          </h2>
+          <p className="text-opacity-50 text-black mt-2">
+            Newsletter to Kindle&apos;s use and transfer to any other app of
+            information received from Google APIs will adhere to{' '}
+            <a
+              href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              Google API Services User Data Policy
+            </a>
+            , including the Limited Use requirements.
+          </p>
+        </div>
       </section>
     </Layout>
   )
