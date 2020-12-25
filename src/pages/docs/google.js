@@ -8,7 +8,7 @@ import Layout from '../../components/layout'
 export default () => {
   return (
     <Layout title="Google">
-      <section className="container max-w-2xl pb-16">
+      <section className="container max-w-2xl">
         <div className="my-8">
           <h1 className="text-4xl" id="google-integration">
             Google Integration
@@ -102,7 +102,7 @@ export default () => {
           </div>
         </div>
       </section>
-      <section className="container max-w-2xl pb-16">
+      <section className="container max-w-2xl pt-8 pb-16">
         <div className="my-8">
           <h2 className="text-2xl" id="limited-use">
             Limited Use Disclosure
