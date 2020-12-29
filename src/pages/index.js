@@ -183,11 +183,6 @@ export default () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-8">
-            <Link to="/docs/google" className="link text-opacity-50 text-black">
-              More information about Google integration
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -206,7 +201,7 @@ export default () => {
                   <Check />
                   <p className="ml-2">
                     10 forwarded emails every month
-                    <span className="pl-1 pb-4 text-xs">*</span>
+                    <span className="pl-1 pb-4 text-xs align-top">*</span>
                   </p>
                 </li>
                 <li className="flex items-center mb-2">
@@ -250,6 +245,24 @@ export default () => {
           Questions? Contact{' '}
           <span className="font-bold">help@newslettertokindle.com</span>
         </p>
+
+        <div className="max-w-sm md:max-w-md mx-auto text-center grid grid-cols-3 gap-4 mt-4 text-xs md:text-sm">
+          <Link
+            to="/docs/privacy-policy"
+            className="link text-opacity-50 text-white"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            to="/docs/terms-of-service"
+            className="link text-opacity-50 text-white"
+          >
+            Terms of Service
+          </Link>
+          <Link to="/docs/google" className="link text-opacity-50 text-white">
+            Google Integration
+          </Link>
+        </div>
       </section>
     </Layout>
   )

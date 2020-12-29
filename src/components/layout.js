@@ -37,7 +37,6 @@ export default ({ title, children }) => {
         </a>
       </header>
       <main>{children}</main>
-      <footer></footer>
     </div>
   )
 }

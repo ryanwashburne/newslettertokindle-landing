@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 export default () => {
   return (
     <Layout title="Privacy">
-      <section className="container">
+      <section className="container pb-16">
         <h2 className="text-2xl mt-8 mb-4">Privacy Policy</h2>
         <ul className="list-disc">
           <li>
@@ -101,6 +101,8 @@ export default () => {
             <a
               href="https://getterms.io"
               title="Generate a free privacy policy"
+              target="_blank"
+              rel="noreferrer"
               className="link text-sm"
             >
               Privacy Policy created with GetTerms.
