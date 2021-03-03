@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 
 import Layout from '../../components/layout'
 
-// https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.settings.basic https://www.googleapis.com/auth/gmail.labels
-
 export default () => {
   return (
     <Layout title="Google">

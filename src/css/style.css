@@ -27,6 +27,7 @@ h6 {
 }
 
 .btn {
+  @apply rounded;
   @apply border-2;
   @apply border-black;
   @apply bg-white;

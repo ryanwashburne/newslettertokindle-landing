@@ -187,15 +187,16 @@ export default () => {
       </section>
 
       <section className="bg-black py-16 xl:py-32" id="pricing">
-        <div className="container xl:w-1/2">
+        <div className="container xl:w-2/3">
           <Animated>
             <h3 className="text-4xl xl:text-6xl mb-4 text-white text-center">
               Ready to get started?
             </h3>
           </Animated>
-          <div className="bg-white p-6 border-2 grid xl:grid-cols-2">
+          <div className="bg-white p-6 border-2 grid xl:grid-cols-3">
             <div className="p-6">
-              <h4 className="text-2xl mb-2">Free</h4>
+              <h4 className="text-2xl text-blue-600">Personal</h4>
+              <p className="text-blue-600 mb-4">Free</p>
               <ul className="text-sm">
                 <li className="flex items-center mb-2">
                   <Check />
@@ -210,11 +211,7 @@ export default () => {
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
-                  <p className="ml-2">Integration with Gmail</p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Dedicated forwarding address</p>
+                  <p className="ml-2">Dedicated subscription address</p>
                 </li>
               </ul>
               <p className="mt-4 text-black text-opacity-40 text-xs">
@@ -222,9 +219,14 @@ export default () => {
                 newsletter subscriptions
               </p>
             </div>
-            <div className="p-6 border-t-2 xl:border-t-0 xl:border-l-2">
-              <h4 className="text-5xl mb-2">$9/month</h4>
-              <ul className="text-lg">
+            <div className="p-6 border-t-2 border-b-2 xl:border-t-0 xl:border-b-0 xl:border-l-2 xl:border-r-2">
+              <h4 className="text-2xl text-green-600">Personal Plus</h4>
+              <p className="text-green-600 mb-4">$5/month</p>
+              <ul className="text-sm">
+                <li className="mb-2">
+                  Everything in&nbsp;
+                  <span className="text-blue-600">Personal</span>, and also:
+                </li>
                 <li className="flex items-center mb-2">
                   <Check />
                   <p className="ml-2">Unlimited newsletters</p>
@@ -232,6 +234,21 @@ export default () => {
                 <li className="flex items-center mb-2">
                   <Check />
                   <p className="ml-2">Conversion to Kindle format</p>
+                </li>
+              </ul>
+            </div>
+            <div className="p-6">
+              <h4 className="text-2xl text-purple-600">Personal Pro</h4>
+              <p className="text-purple-600 mb-4">$10/month</p>
+              <ul className="text-sm">
+                <li className="mb-2">
+                  Everything in&nbsp;
+                  <span className="text-green-600">Personal Plus</span>, and
+                  also:
+                </li>
+                <li className="flex items-center mb-2">
+                  <Check />
+                  <p className="ml-2">Integration with Gmail</p>
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
