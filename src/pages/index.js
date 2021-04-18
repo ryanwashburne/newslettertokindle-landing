@@ -1,11 +1,9 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 
 import Layout from '../components/layout'
 import Animated from '../components/animated'
-
-import { Check } from 'react-feather'
 
 const Section = ({ number, src, title, children }) => {
   return (
@@ -20,7 +18,7 @@ const Section = ({ number, src, title, children }) => {
       </div>
       <div className="w-full xl:w-1/2">
         <Animated>
-          <h2 className="text-4xl xl:text-6xl mb-4 xl:mb-8">{title}</h2>
+          <h2 className="text-4xl xl:text-5xl mb-4 xl:mb-8">{title}</h2>
         </Animated>
         <Animated>{children}</Animated>
       </div>
@@ -70,9 +68,8 @@ export default () => {
       <section className="mb-16 py-16 xl:py-48">
         <div className="container flex flex-wrap items-center">
           <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
-            <h1 className="text-4xl xl:text-7xl font-thin">
-              Send newsletters{' '}
-              <span className="italic font-bold">directly</span> to your Kindle
+            <h1 className="text-4xl xl:text-5xl font-thin">
+              Send newsletters <span className="italic font-bold">directly</span> to your Kindle
             </h1>
             <div className="flex justify-center xl:justify-start mt-8 mb-4">
               <a
@@ -90,8 +87,10 @@ export default () => {
       </section>
 
       <Section number={1} title="Create an account" src={img2}>
+        <p>Only takes 5 minutes to setup your account.</p>
+        <br />
         <p>
-          Set up your account, sync your Kindle, and get started! No credit card
+          Connect your Kindle, tell us which newsletters you want, and get started! No credit card
           required.
         </p>
       </Section>
@@ -114,21 +113,21 @@ export default () => {
           Watch as the incoming newsletters will magically appear on your Kindle
           device. Sit back, relax, and start reading.
         </p>
+        <br />
+        <p>Read your newsletters from your Kindle without blue light or being distracted by notifications and other apps.</p>
       </Section>
 
       <section className="border-t bg-gray-100 py-16 xl:py-32" id="faq">
-        <div className="container max-w-6xl">
+        <div className="container">
           <h3 className="text-center text-3xl mb-8">FAQ</h3>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
             <div className="card">
               <p className="font-bold mb-2">
                 Why should I read newsletters on my Kindle?
               </p>
-              <p>
-                Kindles are made for reading. They are lightweight and
+              <p>If you read at night, the blue light from your laptop or phone impacts negatively your sleep. Kindles are also lightweight and
                 don&apos;t have any of the distractions that traditional web
-                browsers provide. Plus, you already have a Kindle. Use it more!
-              </p>
+                browsers provide.</p>
             </div>
             <div className="card">
               <p className="font-bold mb-2">
@@ -159,7 +158,7 @@ export default () => {
                 convert newsletters that are image-heavy.
               </p>
             </div>
-            <div className="card">
+            {/* <div className="card">
               <p className="font-bold mb-2">What do we do with Google data?</p>
               <p>
                 We let users connect with their Google account for a more
@@ -168,8 +167,8 @@ export default () => {
                 our OAuth token to restrict our access. We only request access
                 to the scopes required to perform the necessary actions.
               </p>
-            </div>
-            <div className="card">
+            </div> */}
+            {/* <div className="card">
               <p className="font-bold mb-2">
                 How does connecting with Google enhance user functionality?
               </p>
@@ -181,104 +180,8 @@ export default () => {
                 is not required to connect with Gmail and can later disconnect
                 their account from Gmail if they wish.
               </p>
-            </div>
+            </div> */}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-black py-16 xl:py-32" id="pricing">
-        <div className="container xl:w-2/3">
-          <Animated>
-            <h3 className="text-4xl xl:text-6xl mb-4 text-white text-center">
-              Ready to get started?
-            </h3>
-          </Animated>
-          <div className="bg-white p-6 border-2 grid xl:grid-cols-3">
-            <div className="p-6">
-              <h4 className="text-2xl text-blue-600">Personal</h4>
-              <p className="text-blue-600 mb-4">Free</p>
-              <ul className="text-sm">
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">
-                    10 forwarded emails every month
-                    <span className="pl-1 pb-4 text-xs align-top">*</span>
-                  </p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">No credit card required</p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Dedicated subscription address</p>
-                </li>
-              </ul>
-              <p className="mt-4 text-black text-opacity-40 text-xs">
-                <span className="pb-4 pr-1">*</span>10 total emails, not
-                newsletter subscriptions
-              </p>
-            </div>
-            <div className="p-6 border-t-2 border-b-2 xl:border-t-0 xl:border-b-0 xl:border-l-2 xl:border-r-2">
-              <h4 className="text-2xl text-green-600">Personal Plus</h4>
-              <p className="text-green-600 mb-4">$5/month</p>
-              <ul className="text-sm">
-                <li className="mb-2">
-                  Everything in&nbsp;
-                  <span className="text-blue-600">Personal</span>, and also:
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Unlimited newsletters</p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Conversion to Kindle format</p>
-                </li>
-              </ul>
-            </div>
-            <div className="p-6">
-              <h4 className="text-2xl text-purple-600">Personal Pro</h4>
-              <p className="text-purple-600 mb-4">$10/month</p>
-              <ul className="text-sm">
-                <li className="mb-2">
-                  Everything in&nbsp;
-                  <span className="text-green-600">Personal Plus</span>, and
-                  also:
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">Integration with Gmail</p>
-                </li>
-                <li className="flex items-center mb-2">
-                  <Check />
-                  <p className="ml-2">More features coming soon</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <p className="text-sm text-white text-opacity-50 text-center mt-8">
-          Questions? Contact{' '}
-          <span className="font-bold">help@newslettertokindle.com</span>
-        </p>
-
-        <div className="max-w-sm md:max-w-md mx-auto text-center grid grid-cols-3 gap-4 mt-4 text-xs md:text-sm">
-          <Link
-            to="/docs/privacy-policy"
-            className="link text-opacity-50 text-white"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            to="/docs/terms-of-service"
-            className="link text-opacity-50 text-white"
-          >
-            Terms of Service
-          </Link>
-          <Link to="/docs/google" className="link text-opacity-50 text-white">
-            Google Integration
-          </Link>
         </div>
       </section>
     </Layout>

@@ -97,7 +97,7 @@ export default () => {
               More information about the Google integration
             </Link>
           </li>
-          <p className="text-black text-opacity-50 mt-8">
+          <p className="mt-8">
             <a
               href="https://getterms.io"
               title="Generate a free privacy policy"

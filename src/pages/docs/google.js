@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 export default () => {
   return (
     <Layout title="Google">
-      <section className="container max-w-2xl">
+      <section className="container">
         <div className="my-8">
           <h1 className="text-4xl" id="google-integration">
             Google Integration
@@ -26,7 +26,6 @@ export default () => {
           </p>
         </div>
         <div>
-          <div className="card">
             <p className="font-bold mb-2">
               What do we do with your Google data?
             </p>
@@ -52,9 +51,7 @@ export default () => {
                 necessary actions.
               </li>
             </ul>
-          </div>
-          <div className="card my-8">
-            <p className="font-bold mb-2">
+            <p className="font-bold mb-2 mt-8">
               How does it enhance the user functionality?
             </p>
             <ul className="list-disc">
@@ -78,9 +75,7 @@ export default () => {
                 only approve email addresses that send no sensitive information.
               </li>
             </ul>
-          </div>
-          <div className="card">
-            <p className="font-bold mb-2">Relevant Links</p>
+            <p className="font-bold mb-2 mt-8">Relevant Links</p>
             <p>
               <Link to="/docs/privacy-policy" className="link">
                 Privacy Policy
@@ -91,16 +86,13 @@ export default () => {
                 Terms of Service
               </Link>
             </p>
-            <p className="italic text-opacity-50 text-black mt-4">
+            <p className="italic text-opacity-50 text-black mt-8">
               If you believe there is a issue with our integration for your
-              account, please reach out to us as soon as possible.
-              <br />
-              <span className="font-bold">help@newslettertokindle.com</span>
+              account, please reach out to us as soon as possible: <span className="font-bold">help@newslettertokindle.com</span>.
             </p>
-          </div>
         </div>
       </section>
-      <section className="container max-w-2xl pt-8 pb-16">
+      <section className="container pt-8 pb-16">
         <div className="my-8">
           <h2 className="text-2xl" id="limited-use">
             Limited Use Disclosure

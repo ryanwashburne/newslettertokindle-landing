@@ -40,7 +40,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Kumbh Sans:regular,bold,light'],
+          families: ['Kumbh Sans:regular,bold,light', 'Lato:regular,bold,light'],
         },
       },
     },

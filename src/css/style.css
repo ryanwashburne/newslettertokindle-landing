@@ -50,7 +50,6 @@ h6 {
   @apply flex;
   @apply items-center;
   @apply justify-center;
-  @apply pt-2;
   @apply bg-black;
   @apply rounded-full;
   @apply h-20;
@@ -76,7 +75,7 @@ h6 {
 .container {
   @apply px-8;
   @apply mx-auto;
-  max-width: 1200;
+  @apply max-w-5xl;
 }
 
 /*! purgecss end ignore */
