@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 
 import { Send, Check } from 'react-feather'
 
-
 import Animated from './animated'
 import SEO from './seo'
 
@@ -25,9 +24,9 @@ export default ({ title, children }) => {
           `direct`,
         ]}
       />
-      <header className="text-xs md:text-sm md:text-lg px-3 container flex items-center py-6">
+      <header className="text-sm md:text-xl px-3 container flex items-center py-6">
         <Link to="/" className="hover:text-gray-700 flex items-center">
-          <Send />
+          <Send className="w-5 md:w-8" />
           &nbsp;Newsletter to Kindle
         </Link>
         <div className="flex-grow" />
@@ -53,7 +52,9 @@ export default ({ title, children }) => {
             </h3>
           </Animated>
           <Animated>
-          <p className="text-center text-white text-xl mt-8 mb-4">Simple, transparent pricing.</p>
+            <p className="text-center text-white text-xl mt-8 mb-4">
+              Simple, transparent pricing.
+            </p>
           </Animated>
           <div className="bg-white p-6 border-2 grid xl:grid-cols-3">
             <div className="p-6">
@@ -122,14 +123,13 @@ export default ({ title, children }) => {
         </div>
 
         <div className="flex justify-center mt-8 mb-16">
-              <a
-                href="https://app.newslettertokindle.com"
-                className="btn bg-transparent border-white hover:bg-opacity-30 text-white text-xl xl:text-2xl px-4 py-3"
-              >
-                Create an account
-              </a>
-            </div>
-
+          <a
+            href="https://app.newslettertokindle.com"
+            className="btn bg-transparent border-white hover:bg-opacity-30 text-white text-xl xl:text-2xl px-4 py-3"
+          >
+            Create an account
+          </a>
+        </div>
 
         <p className="text-sm text-white text-opacity-60 text-center">
           Questions? Contact{' '}

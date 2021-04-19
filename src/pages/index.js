@@ -66,15 +66,16 @@ export default () => {
   return (
     <Layout>
       <section className="mb-16 py-16 xl:py-48">
-        <div className="container flex flex-wrap items-center">
+        <div className="container max-w-7xl flex flex-wrap items-center">
           <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
-            <h1 className="text-4xl xl:text-5xl font-thin">
-              Send newsletters <span className="italic font-bold">directly</span> to your Kindle
+            <h1 className="text-5xl xl:text-6xl font-thin md:pr-4">
+              Send newsletters{' '}
+              <span className="italic font-bold">directly</span> to your Kindle
             </h1>
             <div className="flex justify-center xl:justify-start mt-8 mb-4">
               <a
                 href="https://app.newslettertokindle.com"
-                className="btn text-xl"
+                className="btn text-2xl"
               >
                 Get Started
               </a>
@@ -90,8 +91,8 @@ export default () => {
         <p>Only takes 5 minutes to setup your account.</p>
         <br />
         <p>
-          Connect your Kindle, tell us which newsletters you want, and get started! No credit card
-          required.
+          Connect your Kindle, tell us which newsletters you want, and get
+          started! No credit card required.
         </p>
       </Section>
 
@@ -114,7 +115,10 @@ export default () => {
           device. Sit back, relax, and start reading.
         </p>
         <br />
-        <p>Read your newsletters from your Kindle without blue light or being distracted by notifications and other apps.</p>
+        <p>
+          Read your newsletters from your Kindle without blue light or being
+          distracted by notifications and other apps.
+        </p>
       </Section>
 
       <section className="border-t bg-gray-100 py-16 xl:py-32" id="faq">
@@ -125,9 +129,12 @@ export default () => {
               <p className="font-bold mb-2">
                 Why should I read newsletters on my Kindle?
               </p>
-              <p>If you read at night, the blue light from your laptop or phone impacts negatively your sleep. Kindles are also lightweight and
+              <p>
+                If you read at night, the blue light from your laptop or phone
+                impacts negatively your sleep. Kindles are also lightweight and
                 don&apos;t have any of the distractions that traditional web
-                browsers provide.</p>
+                browsers provide.
+              </p>
             </div>
             <div className="card">
               <p className="font-bold mb-2">
