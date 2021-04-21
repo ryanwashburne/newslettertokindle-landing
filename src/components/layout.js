@@ -65,7 +65,7 @@ export default ({ title, children }) => {
                   <Check />
                   <p className="ml-2">
                     10 forwarded emails every month
-                    <span className="pl-1 pb-4 text-xs align-top">*</span>
+                    <span className="pl-1 pb-4 text-sm align-top">*</span>
                   </p>
                 </li>
                 <li className="flex items-center mb-2">

@@ -52,11 +52,11 @@ h6 {
   @apply justify-center;
   @apply bg-black;
   @apply rounded-full;
-  @apply h-20;
-  @apply w-20;
+  @apply h-16;
+  @apply w-16;
   @apply text-center;
   @apply font-bold;
-  @apply text-6xl;
+  @apply text-5xl;
   @apply text-white;
   @apply shadow;
 }

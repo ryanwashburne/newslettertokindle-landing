@@ -12,7 +12,7 @@ const Section = ({ number, src, title, children }) => {
         <div className="w-full relative mb-12 xl:mb-0 xl:mr-32">
           <Image fluid={src} />
           <div className="absolute top-0 left-0 -mt-12 -ml-12">
-            <p className="counter">{number}</p>
+            <p className="counter pb-1">{number}</p>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default () => {
                 href="https://app.newslettertokindle.com"
                 className="btn text-2xl"
               >
-                Get Started
+                Try for free
               </a>
             </div>
           </div>
@@ -88,24 +88,23 @@ export default () => {
       </section>
 
       <Section number={1} title="Create an account" src={img2}>
-        <p>Only takes 5 minutes to setup your account.</p>
+        <p>It only takes 5 minutes to setup your account.</p>
         <br />
         <p>
-          Connect your Kindle, tell us which newsletters you want, and get
-          started! No credit card required.
+          Grab your Kindle, connect it with our platform, and get started! No
+          credit card required.
         </p>
       </Section>
 
-      <Section number={2} title="Subscribe with your new email" src={img3}>
+      <Section number={2} title="Sync with your email" src={img3}>
         <p>
           Once you have created an account and linked with your Kindle device,
-          you will be provided a unique email address. You can use this email to
-          subscribe to newsletters that you want delivered right to your device.
+          you can set up auto-forwarding from your favorite newsletters.
         </p>
         <br />
         <p>
-          Or you can integrate directly with Gmail and keep the emails both in
-          your inbox and on the Kindle.
+          Or you can integrate directly with Gmail and read your newsletters
+          both in your inbox and on your Kindle.
         </p>
       </Section>
 
@@ -141,9 +140,9 @@ export default () => {
                 Can&apos;t I just forward the newsletters to my Kindle manually?
               </p>
               <p>
-                Unfortunately, HTML/text-based emails are not supported by
-                Kindle devices. Our service automates the conversion process so
-                you don&apos;t have to.
+                HTML/text-based emails are not supported by Kindle devices. Our
+                service automates the conversion process so you don&apos;t have
+                to. Images are embedded with our service as well.
               </p>
             </div>
             <div className="card">
