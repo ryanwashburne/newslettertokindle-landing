@@ -27,7 +27,15 @@ const Section = ({ number, src, title, children }) => {
 }
 
 export default () => {
-  const { readingSide, meditating, selfie, laying } = useStaticQuery(graphql`
+  const {
+    readingSide,
+    meditating,
+    selfie,
+    laying,
+    test1,
+    test2,
+    test3,
+  } = useStaticQuery(graphql`
     query {
       readingSide: file(relativePath: { eq: "doodles/ReadingSideDoodle.png" }) {
         childImageSharp {
@@ -57,12 +65,37 @@ export default () => {
           }
         }
       }
+      test1: file(relativePath: { eq: "testimonial/test1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+      test2: file(relativePath: { eq: "testimonial/test2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+      test3: file(relativePath: { eq: "testimonial/test3.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
     }
   `)
   const img1 = readingSide?.childImageSharp?.fluid
   const img2 = meditating?.childImageSharp?.fluid
   const img3 = selfie?.childImageSharp?.fluid
   const img4 = laying?.childImageSharp?.fluid
+
+  const testImg1 = test1?.childImageSharp?.fluid
+  const testImg2 = test2?.childImageSharp?.fluid
+  const testImg3 = test3?.childImageSharp?.fluid
   return (
     <Layout>
       <section className="mb-16 py-16 xl:py-48">
@@ -120,7 +153,10 @@ export default () => {
         </p>
       </Section>
 
-      <section className="border-t bg-gray-100 py-16 xl:py-32" id="faq">
+      <section
+        className="border-t border-b bg-gray-100 py-16 xl:py-32"
+        id="faq"
+      >
         <div className="container">
           <h3 className="text-center text-3xl mb-8">FAQ</h3>
           <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
@@ -187,6 +223,22 @@ export default () => {
                 their account from Gmail if they wish.
               </p>
             </div> */}
+          </div>
+        </div>
+      </section>
+
+      <section className="container py-16 xl:py-32" id="testimonial">
+        <h3 className="text-center text-4xl mb-2">Customer Testimonial</h3>
+        <p className="text-center text-black text-opacity-70 mb-8">
+          See what a few of our happy customers have said...
+        </p>
+        <div className="sm:grid grid-cols-2 gap-8">
+          <div className="mb-4 sm:mb-0">
+            <Image fluid={testImg1} className="w-full mb-8" />
+            <Image fluid={testImg3} className="w-full mb-8 sm:mb-0" />
+          </div>
+          <div>
+            <Image fluid={testImg2} className="w-full" />
           </div>
         </div>
       </section>

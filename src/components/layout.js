@@ -1,20 +1,35 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import Image from 'gatsby-image'
 
-import { Send, Check } from 'react-feather'
+import { Check } from 'react-feather'
 
 import Animated from './animated'
 import SEO from './seo'
 
 export default ({ title, children }) => {
+  const { logo } = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fixed(width: 45) {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
+    }
+  `)
+  const img1 = logo?.childImageSharp?.fixed
   return (
     <div className="min-h-screen">
       <SEO
         title={title}
         keywords={[
+          `read`,
           `newsletter`,
           `kindle`,
           `email`,
+          `emails`,
           `platform`,
           `newsletters`,
           `send`,
@@ -25,9 +40,9 @@ export default ({ title, children }) => {
         ]}
       />
       <header className="text-sm md:text-xl px-3 container flex items-center py-6">
-        <Link to="/" className="hover:text-gray-700 flex items-center">
-          <Send className="w-5 md:w-8" />
-          &nbsp;Newsletter to Kindle
+        <Link to="/" className="hover:text-gray-700 text-xl flex items-center">
+          <Image fixed={img1} />
+          <span className="ml-2">Newsletter to Kindle</span>
         </Link>
         <div className="flex-grow" />
         <Link to="#faq" className="hover:underline mr-3 md:mr-8">
@@ -88,7 +103,7 @@ export default ({ title, children }) => {
               <ul className="text-sm">
                 <li className="mb-2">
                   Everything in&nbsp;
-                  <span className="text-blue-600">Personal</span>, and also:
+                  <span className="text-blue-600">Personal</span>, also:
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
@@ -106,8 +121,7 @@ export default ({ title, children }) => {
               <ul className="text-sm">
                 <li className="mb-2">
                   Everything in&nbsp;
-                  <span className="text-green-600">Personal Plus</span>, and
-                  also:
+                  <span className="text-green-600">Personal Plus</span>, also:
                 </li>
                 <li className="flex items-center mb-2">
                   <Check />
