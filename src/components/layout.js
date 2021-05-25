@@ -45,10 +45,10 @@ export default ({ title, children }) => {
           <span className="ml-2">Newsletter to Kindle</span>
         </Link>
         <div className="flex-grow" />
-        <Link to="#faq" className="hover:underline mr-3 md:mr-8">
+        <Link to="/#faq" className="hover:underline mr-3 md:mr-8">
           FAQ
         </Link>
-        <Link to="#pricing" className="hover:underline mr-3 md:mr-8">
+        <Link to="/#pricing" className="hover:underline mr-3 md:mr-8">
           Pricing
         </Link>
         <a
