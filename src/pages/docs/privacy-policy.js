@@ -59,7 +59,7 @@ export default () => {
           </li>
           <li>This policy is effective as of 14 October 2020.</li>
         </ul>
-        <h4 className="text-xl mt-8 mb-4">Google Integratioin</h4>
+        <h4 className="text-xl mt-8 mb-4">Google Integration</h4>
         <ul className="list-disc">
           <li>
             Newsletter to Kindle&apos;s use of information received from Google

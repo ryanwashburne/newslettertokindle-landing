@@ -25,6 +25,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: process.env.FACEBOOK_PIXEL,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `newsletter-to-kindle`,
