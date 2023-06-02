@@ -24,10 +24,18 @@ module.exports = {
     //     respectDNT: true,
     //   },
     // },
+    // {
+    //   resolve: `gatsby-plugin-google-tagmanager`,
+    //   options: {
+    //     id: process.env.GOOGLE_TAG_ID,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        id: process.env.GOOGLE_TAG_ID,
+        trackingId: process.env.GOOGLE_TAG_ID,
+        head: true,
+        anonymize: true,
       },
     },
     {
