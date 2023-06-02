@@ -16,12 +16,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //     anonymize: true,
+    //     respectDNT: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        anonymize: true,
-        respectDNT: true,
+        id: process.env.GOOGLE_TAG_ID,
       },
     },
     {
