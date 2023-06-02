@@ -24,12 +24,6 @@ module.exports = {
     //     respectDNT: true,
     //   },
     // },
-    // {
-    //   resolve: `gatsby-plugin-google-tagmanager`,
-    //   options: {
-    //     id: process.env.GOOGLE_TAG_ID,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
