@@ -39,48 +39,48 @@ export default ({ title, children }) => {
           `direct`,
         ]}
       />
-      <header className="text-sm md:text-xl px-3 container flex items-center py-6">
-        <Link to="/" className="hover:text-gray-700 text-xl flex items-center">
+      <header className="container flex items-center px-3 py-6 text-sm md:text-xl">
+        <Link to="/" className="flex items-center text-xl hover:text-gray-700">
           <Image fixed={img1} />
           <span className="ml-2">Newsletter to Kindle</span>
         </Link>
         <div className="flex-grow" />
-        <Link to="/#faq" className="hover:underline mr-3 md:mr-8">
+        <Link to="/#faq" className="mr-3 hover:underline md:mr-8">
           FAQ
         </Link>
-        <Link to="/#pricing" className="hover:underline mr-3 md:mr-8">
+        <Link to="/#pricing" className="mr-3 hover:underline md:mr-8">
           Pricing
         </Link>
         <a
           href="https://app.newslettertokindle.com"
-          className="btn py-1 md:py-2 px-2 md:px-3"
+          className="px-2 py-1 btn md:py-2 md:px-3"
         >
           Login
         </a>
       </header>
       <main>{children}</main>
-      <footer className="bg-black py-16 xl:py-32" id="pricing">
+      <footer className="py-16 bg-black xl:py-32" id="pricing">
         <div className="container xl:w-2/3">
           <Animated>
-            <h3 className="text-4xl xl:text-6xl mb-4 text-white text-center">
+            <h3 className="mb-4 text-4xl text-center text-white xl:text-6xl">
               Ready to get started?
             </h3>
           </Animated>
           <Animated>
-            <p className="text-center text-white text-xl mt-8 mb-4">
+            <p className="mt-8 mb-4 text-xl text-center text-white">
               Simple, transparent pricing.
             </p>
           </Animated>
-          <div className="bg-white p-6 border-2 grid xl:grid-cols-3">
+          <div className="grid p-6 bg-white border-2 xl:grid-cols-3">
             <div className="p-6">
               <h4 className="text-2xl text-blue-600">Personal</h4>
-              <p className="text-blue-600 mb-4">Free</p>
+              <p className="mb-4 text-blue-600">Free</p>
               <ul className="text-sm">
                 <li className="flex items-center mb-2">
                   <Check />
                   <p className="ml-2">
-                    10 forwarded emails every month
-                    <span className="pl-1 pb-4 text-sm align-top">*</span>
+                    25 forwarded emails every month
+                    <span className="pb-4 pl-1 text-sm align-top">*</span>
                   </p>
                 </li>
                 <li className="flex items-center mb-2">
@@ -92,14 +92,14 @@ export default ({ title, children }) => {
                   <p className="ml-2">Provided email address</p>
                 </li>
               </ul>
-              <p className="mt-4 text-black text-opacity-50 text-xs">
+              <p className="mt-4 text-xs text-black text-opacity-50">
                 <span className="pb-4 pr-1">*</span>10 total emails, not
                 newsletter subscriptions
               </p>
             </div>
             <div className="p-6 border-t-2 border-b-2 xl:border-t-0 xl:border-b-0 xl:border-l-2 xl:border-r-2">
               <h4 className="text-2xl text-green-600">Personal Plus</h4>
-              <p className="text-green-600 mb-4">$5/month</p>
+              <p className="mb-4 text-green-600">$5/month</p>
               <ul className="text-sm">
                 <li className="mb-2">
                   Everything in&nbsp;
@@ -117,7 +117,7 @@ export default ({ title, children }) => {
             </div>
             <div className="p-6">
               <h4 className="text-2xl text-purple-600">Personal Pro</h4>
-              <p className="text-purple-600 mb-4">$10/month</p>
+              <p className="mb-4 text-purple-600">$10/month</p>
               <ul className="text-sm">
                 <li className="mb-2">
                   Everything in&nbsp;
@@ -139,31 +139,31 @@ export default ({ title, children }) => {
         <div className="flex justify-center mt-8 mb-16">
           <a
             href="https://app.newslettertokindle.com"
-            className="btn bg-transparent border-white hover:bg-opacity-30 text-white text-xl xl:text-2xl px-4 py-3"
+            className="px-4 py-3 text-xl text-white bg-transparent border-white btn hover:bg-opacity-30 xl:text-2xl"
           >
             Create an account
           </a>
         </div>
 
-        <p className="text-sm text-white text-opacity-60 text-center">
+        <p className="text-sm text-center text-white text-opacity-60">
           Questions? Contact{' '}
           <span className="font-bold">help@newslettertokindle.com</span>
         </p>
 
-        <div className="max-w-sm md:max-w-md mx-auto text-center grid grid-cols-3 gap-4 mt-4 text-xs md:text-sm">
+        <div className="grid max-w-sm grid-cols-3 gap-4 mx-auto mt-4 text-xs text-center md:max-w-md md:text-sm">
           <Link
             to="/docs/privacy-policy"
-            className="link text-opacity-60 text-white"
+            className="text-white link text-opacity-60"
           >
             Privacy Policy
           </Link>
           <Link
             to="/docs/terms-of-service"
-            className="link text-opacity-60 text-white"
+            className="text-white link text-opacity-60"
           >
             Terms of Service
           </Link>
-          <Link to="/docs/google" className="link text-opacity-60 text-white">
+          <Link to="/docs/google" className="text-white link text-opacity-60">
             Google Integration
           </Link>
         </div>
