@@ -93,7 +93,7 @@ export default ({ title, children }) => {
                 </li>
               </ul>
               <p className="mt-4 text-xs text-black text-opacity-50">
-                <span className="pb-4 pr-1">*</span>10 total emails, not
+                <span className="pb-4 pr-1">*</span>25 total emails, not
                 newsletter subscriptions
               </p>
             </div>
