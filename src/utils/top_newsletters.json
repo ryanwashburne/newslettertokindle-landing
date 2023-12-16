@@ -1,0 +1,20 @@
+{
+  "updated": "12/16/2023",
+  "newsletters": [
+    ["crew@morningbrew.com", 55],
+    ["blog@stratechery.com", 48],
+    ["forwardthinking@substack.com", 43],
+    ["notboring@substack.com", 40],
+    ["lenny@substack.com", 39],
+    ["napkinmath@substack.com", 28],
+    ["nytdirect@nytimes.com", 27],
+    ["james@jamesclear.com", 26],
+    ["thegeneralist@substack.com", 21],
+    ["email@stratechery.com", 20],
+    ["membership@stratechery.com", 19],
+    ["theprofile@substack.com", 18],
+    ["pragmaticengineer@substack.com", 18],
+    ["noahpinion@substack.com", 18],
+    ["newsletter@farnamstreetblog.com", 17]
+  ]
+}

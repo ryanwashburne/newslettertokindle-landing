@@ -40,15 +40,30 @@ export default ({ title, children }) => {
         ]}
       />
       <header className="container flex items-center px-3 py-6 text-sm md:text-xl">
-        <Link to="/" className="flex items-center text-xl hover:text-gray-700">
+        <Link
+          to="/"
+          className="flex items-center md:text-xl hover:text-gray-700"
+        >
           <Image fixed={img1} />
           <span className="ml-2">Newsletter to Kindle</span>
         </Link>
         <div className="flex-grow" />
-        <Link to="/#faq" className="mr-3 hover:underline md:mr-8">
+        <Link
+          to="/#top-newsletters"
+          className="hidden mr-3 md:block hover:underline md:mr-8"
+        >
+          Reading
+        </Link>
+        <Link
+          to="/#faq"
+          className="hidden mr-3 md:block hover:underline md:mr-8"
+        >
           FAQ
         </Link>
-        <Link to="/#pricing" className="mr-3 hover:underline md:mr-8">
+        <Link
+          to="/#pricing"
+          className="hidden mr-3 md:block hover:underline md:mr-8"
+        >
           Pricing
         </Link>
         <a
@@ -60,34 +75,34 @@ export default ({ title, children }) => {
       </header>
       <main>{children}</main>
       <footer className="py-16 bg-black xl:py-32" id="pricing">
-        <div className="container xl:w-2/3">
+        <div className="container md:w-1/2 xl:w-2/3">
           <Animated>
             <h3 className="mb-4 text-4xl text-center text-white xl:text-6xl">
               Ready to get started?
             </h3>
           </Animated>
           <Animated>
-            <p className="mt-8 mb-4 text-xl text-center text-white">
+            <p className="mt-6 mb-8 text-xl text-center text-white">
               Simple, transparent pricing.
             </p>
           </Animated>
-          <div className="grid p-6 bg-white border-2 xl:grid-cols-3">
-            <div className="p-6">
+          <div className="grid p-6 text-center bg-white border-2 xl:text-left xl:grid-cols-3">
+            <div className="py-6 xl:px-6">
               <h4 className="text-2xl text-blue-600">Personal</h4>
               <p className="mb-4 text-blue-600">Free</p>
               <ul className="text-sm">
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">
                     25 forwarded emails every month
                     <span className="pb-4 pl-1 text-sm align-top">*</span>
                   </p>
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">No credit card required</p>
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">Provided email address</p>
                 </li>
@@ -105,11 +120,11 @@ export default ({ title, children }) => {
                   Everything in&nbsp;
                   <span className="text-blue-600">Personal</span>, also:
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">Unlimited newsletters</p>
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">Conversion to Kindle format</p>
                 </li>
@@ -123,11 +138,11 @@ export default ({ title, children }) => {
                   Everything in&nbsp;
                   <span className="text-green-600">Personal Plus</span>, also:
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">Integration with Gmail</p>
                 </li>
-                <li className="flex items-center mb-2">
+                <li className="pricing-item">
                   <Check />
                   <p className="ml-2">More features coming soon</p>
                 </li>

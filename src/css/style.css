@@ -78,5 +78,13 @@ h6 {
   @apply max-w-5xl;
 }
 
+.pricing-item {
+  @apply flex;
+  @apply items-center;
+  @apply mb-2;
+  @apply justify-center;
+  @apply xl:justify-start;
+}
+
 /*! purgecss end ignore */
 @tailwind utilities;

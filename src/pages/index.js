@@ -5,20 +5,22 @@ import Image from 'gatsby-image'
 import Layout from '../components/layout'
 import Animated from '../components/animated'
 
+import TopNewsletters from '../utils/top_newsletters.json'
+
 const Section = ({ number, src, title, children }) => {
   return (
-    <section className="container py-16 xl:pb-48 flex flex-wrap items-center justify-center text-lg xl:text-xl">
-      <div className="w-full xl:w-1/2 flex justify-center xl:justify-end">
-        <div className="w-full relative mb-12 xl:mb-0 xl:mr-32">
+    <section className="container flex flex-wrap items-center justify-center py-16 text-lg xl:pb-48 xl:text-xl">
+      <div className="flex justify-center w-full md:w-1/2 md:justify-end">
+        <div className="relative w-full mb-12 md:mb-0 md:mr-32">
           <Image fluid={src} />
-          <div className="absolute top-0 left-0 -mt-12 -ml-12">
-            <p className="counter pb-1">{number}</p>
+          <div className="absolute top-0 left-0 -mt-12 -ml-4 md:-ml-6 xl:-ml-12">
+            <p className="pb-1 counter">{number}</p>
           </div>
         </div>
       </div>
-      <div className="w-full xl:w-1/2">
+      <div className="w-full md:w-1/2">
         <Animated>
-          <h2 className="text-4xl xl:text-5xl mb-4 xl:mb-8">{title}</h2>
+          <h2 className="mb-4 text-2xl md:text-4xl md:mb-8">{title}</h2>
         </Animated>
         <Animated>{children}</Animated>
       </div>
@@ -98,29 +100,33 @@ export default () => {
   const testImg3 = test3?.childImageSharp?.fluid
   return (
     <Layout>
-      <section className="mb-16 py-16 xl:py-48">
-        <div className="container max-w-7xl flex flex-wrap items-center">
-          <div className="w-full xl:w-3/5 mb-8 xl:mb-0 text-center xl:text-left">
-            <h1 className="text-5xl xl:text-6xl font-thin md:pr-4">
+      <section className="py-16 mb-16 xl:py-48">
+        <div className="container flex flex-wrap items-center max-w-7xl">
+          <div className="w-full mb-8 text-center md:w-3/5 md:mb-0 md:text-left">
+            <h1 className="text-4xl font-thin md:text-6xl md:pr-4">
               Send newsletters{' '}
               <span className="italic font-bold">directly</span> to your Kindle
             </h1>
-            <div className="flex justify-center xl:justify-start mt-8 mb-4">
+            <p className="max-w-xl mt-8 md:text-lg md:pr-4">
+              Automatically convert your email newsletters into Kindle documents
+              and watch them appear on your device - just like magic &#10024;
+            </p>
+            <div className="flex justify-center mt-8 mb-4 md:justify-start">
               <a
                 href="https://app.newslettertokindle.com"
-                className="btn text-2xl"
+                className="text-2xl btn"
               >
                 Try for free
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-2/5">
+          <div className="w-full md:w-2/5">
             <Image fluid={img1} />
           </div>
         </div>
       </section>
 
-      <Section number={1} title="Create an account" src={img2}>
+      <Section number={1} title="Create an account 📝" src={img2}>
         <p>It only takes 5 minutes to setup your account.</p>
         <br />
         <p>
@@ -129,7 +135,7 @@ export default () => {
         </p>
       </Section>
 
-      <Section number={2} title="Sync with your email" src={img3}>
+      <Section number={2} title="Sync with your email 📧" src={img3}>
         <p>
           Once you have created an account and linked with your Kindle device,
           you can set up auto-forwarding from your favorite newsletters.
@@ -141,7 +147,7 @@ export default () => {
         </p>
       </Section>
 
-      <Section number={3} title="Enjoy on your Kindle" src={img4}>
+      <Section number={3} title="Enjoy on your Kindle 📚" src={img4}>
         <p>
           Watch as the incoming newsletters will magically appear on your Kindle
           device. Sit back, relax, and start reading.
@@ -154,14 +160,44 @@ export default () => {
       </Section>
 
       <section
-        className="border-t border-b bg-gray-100 py-16 xl:py-32"
+        className="container py-16 text-center border-t border-b "
+        id="top-newsletters"
+      >
+        <h3 className="mb-4 text-xl md:text-2xl">
+          What our users are reading...
+        </h3>
+
+        <ol className="grid md:text-lg gap-y-1">
+          {TopNewsletters.newsletters.map(([newsletter], i) => {
+            return (
+              <li key={newsletter}>
+                #{i + 1}. {newsletter}
+              </li>
+            )
+          })}
+        </ol>
+
+        <p className="mt-2 mb-12 text-xs text-accent">
+          Last updated {TopNewsletters.updated}
+        </p>
+
+        <div className="flex flex-col items-center mt-8 mb-4">
+          <p className="mb-4 font-bold md:text-lg">See one you recognize?</p>
+          <a href="https://app.newslettertokindle.com" className="text-xl btn">
+            Read it on your Kindle
+          </a>
+        </div>
+      </section>
+
+      <section
+        className="py-16 bg-gray-100 border-t border-b xl:py-32"
         id="faq"
       >
         <div className="container">
-          <h3 className="text-center text-3xl mb-8">FAQ</h3>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-4">
+          <h3 className="mb-8 text-3xl text-center">FAQ</h3>
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <div className="card">
-              <p className="font-bold mb-2">
+              <p className="mb-2 font-bold">
                 Why should I read newsletters on my Kindle?
               </p>
               <p>
@@ -172,7 +208,7 @@ export default () => {
               </p>
             </div>
             <div className="card">
-              <p className="font-bold mb-2">
+              <p className="mb-2 font-bold">
                 Can&apos;t I just forward the newsletters to my Kindle manually?
               </p>
               <p>
@@ -182,7 +218,7 @@ export default () => {
               </p>
             </div>
             <div className="card">
-              <p className="font-bold mb-2">
+              <p className="mb-2 font-bold">
                 How do you view links on the Kindle?
               </p>
               <p>
@@ -193,7 +229,7 @@ export default () => {
               </p>
             </div>
             <div className="card">
-              <p className="font-bold mb-2">How are images displayed?</p>
+              <p className="mb-2 font-bold">How are images displayed?</p>
               <p>
                 Newsletters can be viewed as a direct copy or converted to a
                 native Kindle format. We recommend that you don&apos;t try to
@@ -201,7 +237,7 @@ export default () => {
               </p>
             </div>
             {/* <div className="card">
-              <p className="font-bold mb-2">What do we do with Google data?</p>
+              <p className="mb-2 font-bold">What do we do with Google data?</p>
               <p>
                 We let users connect with their Google account for a more
                 seamless experience. If granted access, we store your Google
@@ -211,7 +247,7 @@ export default () => {
               </p>
             </div> */}
             {/* <div className="card">
-              <p className="font-bold mb-2">
+              <p className="mb-2 font-bold">
                 How does connecting with Google enhance user functionality?
               </p>
               <p>
@@ -228,11 +264,13 @@ export default () => {
       </section>
 
       <section className="container py-16 xl:py-32" id="testimonial">
-        <h3 className="text-center text-4xl mb-2">Customer Testimonial</h3>
-        <p className="text-center text-black text-opacity-70 mb-8">
+        <h3 className="mb-2 text-xl text-center md:text-4xl">
+          Customer Testimonial
+        </h3>
+        <p className="mb-8 text-sm text-center text-black md:text-base text-opacity-70">
           See what a few of our happy customers have said...
         </p>
-        <div className="sm:grid grid-cols-2 gap-8">
+        <div className="grid-cols-2 gap-8 sm:grid">
           <div className="mb-4 sm:mb-0">
             <Image fluid={testImg1} className="w-full mb-8" />
             <Image fluid={testImg3} className="w-full mb-8 sm:mb-0" />
