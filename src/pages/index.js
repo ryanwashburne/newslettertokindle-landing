@@ -267,6 +267,18 @@ export default () => {
         <h3 className="mb-2 text-xl text-center md:text-4xl">
           Customer Testimonial
         </h3>
+        <div className="pt-8 pb-16 flex justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZpYPSkrKMtM?si=FJEyVAE4lbOCnncN&amp;start=2299"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowFullscreen
+          ></iframe>
+        </div>
         <p className="mb-8 text-sm text-center text-black md:text-base text-opacity-70">
           See what a few of our happy customers have said...
         </p>
