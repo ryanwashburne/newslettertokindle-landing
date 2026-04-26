@@ -1,25 +1,85 @@
 {
-  "updated": "9/10/2024",
-  "newsletters": [
-    ["crew@morningbrew.com", 71],
-    ["forwardthinking@substack.com", 62],
-    ["blog@stratechery.com", 57],
-    ["lenny@substack.com", 49],
-    ["notboring@substack.com", 46],
-    ["nytdirect@nytimes.com", 36],
-    ["james@jamesclear.com", 36],
-    ["napkinmath@substack.com", 31],
-    ["thegeneralist@substack.com", 25],
-    ["theprofile@substack.com", 23],
-    ["pragmaticengineer@substack.com", 23],
-    ["astralcodexten@substack.com", 22],
-    ["noahpinion@substack.com", 22],
-    ["newsletter@farnamstreetblog.com", 21],
-    ["matthewyglesias@substack.com", 19],
-    ["morningdispatch@substack.com", 18],
-    ["contato@thenewscc.com.br", 16],
-    ["news@thehustle.co", 15],
-    ["ali@aliabdaal.com", 15],
-    ["heathercoxrichardson@substack.com", 14]
+  "updated":"4/26/2026",
+  "newsletters":[
+     [
+        "crew@morningbrew.com",
+        86
+     ],
+     [
+        "forwardthinking@substack.com",
+        79
+     ],
+     [
+        "lenny@substack.com",
+        68
+     ],
+     [
+        "blog@stratechery.com",
+        68
+     ],
+     [
+        "james@jamesclear.com",
+        59
+     ],
+     [
+        "nytdirect@nytimes.com",
+        52
+     ],
+     [
+        "notboring@substack.com",
+        49
+     ],
+     [
+        "author@calnewport.com",
+        43
+     ],
+     [
+        "napkinmath@substack.com",
+        40
+     ],
+     [
+        "newsletter@farnamstreetblog.com",
+        34
+     ],
+     [
+        "theprofile@substack.com",
+        30
+     ],
+     [
+        "pragmaticengineer@substack.com",
+        29
+     ],
+     [
+        "tim@fourhourbody.com",
+        28
+     ],
+     [
+        "thegeneralist@substack.com",
+        27
+     ],
+     [
+        "morningdispatch@substack.com",
+        26
+     ],
+     [
+        "astralcodexten@substack.com",
+        26
+     ],
+     [
+        "noahpinion@substack.com",
+        24
+     ],
+     [
+        "ali@aliabdaal.com",
+        23
+     ],
+     [
+        "pragmaticengineer+deepdives@substack.com",
+        21
+     ],
+     [
+        "heathercoxrichardson@substack.com",
+        19
+     ]
   ]
 }
